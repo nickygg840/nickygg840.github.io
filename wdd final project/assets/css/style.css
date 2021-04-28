@@ -1,0 +1,56 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #d5cabd;
+    position: relative;
+    background-color: #4c3b71;
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    margin-left: 100px;
+    margin-top: -250px;
+    text-align: center;
+    align-content: center;
+    padding-left: 50px;
+}
+/* source:https://tomelliott.com/html-css/css3-text-glow-text-shadow#:~:text=There%20is%20no%20specific%20CSS%20to%20create%20a,I%20use%20here%20to%20create%20the%20text%20glows. */
+body {
+    text-shadow: 0px 0px 2px #4d4d4d, 0px 5px 10px #aeaeae;
+}
+body #title, #subtitle, #paragraph, #paragraph2 {
+    animation-name: wavey;
+	animation-duration: 2s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+@keyframes wavey {
+    0% { transform: translateY(20px); }
+	50% { transform: translateY(0px); }
+	100% { transform: translateY(30px); }
+}
+.loop {
+    align-self: center;
+    animation: rotate 20s infinite linear;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(359deg);
+    }
+}
+
+
+#chunk {
+    padding-bottom: 40px;
+}
+#chunk2 {
+    padding-top: 20px;
+}
+#paragraph2 {
+    color: #d5cabd;
+}
+
+
+
